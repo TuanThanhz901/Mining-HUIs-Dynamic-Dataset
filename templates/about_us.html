@@ -1,0 +1,68 @@
+{% extends "index.html" %} {% block title %}About Us{% endblock %} {% block
+content %}
+<div class="main-container">
+  <!-- Left Section -->
+  <div class="left-section">
+    <h1>Introduction</h1>
+    <p>
+      Welcome to the <strong>High Utility Itemset Miner</strong>! This
+      application is designed to help researchers, data analysts, and business
+      professionals efficiently mine high utility itemsets from data.
+    </p>
+    <p>
+      This website was developed by <strong>Le Tuan Thanh</strong> and
+      <strong>Pham Hoang Trung Kien</strong>, a student from the Faculty of
+      <strong>Information Technology, Ton Duc Thang University</strong>. It is a
+      demo project for the Information Technology Project course, under the
+      guidance of <strong>Mr. Doan Xuan Thanh</strong>.
+    </p>
+    <p>
+      The goal of this website is to explore high occupancy itemsets by using
+      the IMEFIM algorithm:
+    </p>
+    <ul>
+      <li>
+        Interleaved pattern mining with
+        <strong>Efficient Frequent Itemset Mining (IMEFIM).</strong>
+      </li>
+    </ul>
+    <p>
+      IMEFIM was introduced by Loan T.T. Nguyen and other co-authors in 2019. It
+      utilizes advanced interleaving techniques to discover high occupancy
+      itemsets efficiently. However, you may encounter difficulties in selecting
+      the most suitable minimum occupancy threshold to determine the correct
+      number of itemsets.
+    </p>
+    <h2>Provide</h2>
+    <p>The website provides the following functions:</p>
+    <ul>
+      <li>Mine high occupancy itemsets using the IMEFIM algorithm.</li>
+      <li>Allow users to upload datasets and adjust utility thresholds.</li>
+      <li>Display and interpret mining results for analysis.</li>
+    </ul>
+  </div>
+
+  <!-- Right Section -->
+  <div class="right-section">
+    <h2>Format of source file</h2>
+    <p>
+      The input file is a text file containing transaction data. Each line
+      represents a transaction, where items are separated by spaces, followed by
+      the total utility value (profit) separated by a colon. The individual
+      utilities of items in the transaction are also separated by spaces and are
+      listed after the total utility, separated by another colon.
+    </p>
+    <h2>Format of returned file</h2>
+    <p>
+      The returned file is a text file containing the high occupancy itemsets
+      mined from the input data. Each line represents an itemset and its
+      corresponding utility value, separated by a space. Items in the itemset
+      are enclosed in square brackets and separated by commas.
+    </p>
+    <h2>Quick Links</h2>
+    <ul>
+      <li><a href="/huis">Find HUIs</a></li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
